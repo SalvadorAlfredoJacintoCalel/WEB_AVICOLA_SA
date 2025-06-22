@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pollo Dorado S.A.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+<img src="../IMAGENES/Logo_izquierdo2.png" alt="Logo" class="logo-superior" onclick="mostrarSeccion('panel-bienvenida')" style="cursor: pointer;" />
+
+    <div style="position: absolute; top: 55px; right: 20px; display: flex; align-items: center; gap: 10px;">
+      <img src="../IMAGENES/Icono_Registro2.png" alt="Registro" style="height: 40px;" />
+    <button class="nav-button login-button" onclick="mostrarSeccion('panel-bienvenida')">INGRESAR</button>
+    </div>
+
+    <div style="margin-top: 30px;">
+      <button class="nav-button" onclick="mostrarSeccion('mision')">MISIÓN</button>
+      <button class="nav-button" onclick="mostrarSeccion('vision')">VISIÓN</button>
+      <button class="nav-button" onclick="mostrarSeccion('contactenos')">CONTÁCTENOS</button>
+      <button class="nav-button" onclick="mostrarSeccion('conocenos')">CONÓCENOS</button>
+    </div>
+  </header>
+  
+  <div class="imagen-fondo">
+    <div id="panel-bienvenida" class="titulo-bienvenida">
+      <h1>BIENVENIDOS A</h1>
+      <h2>POLLO DORADO S.A.</h2>
+      <h3>LOS MEJORES POLLOS</h3>
+    </div>
+
+    <!-- Panel Misión -->
+    <div id="panel-mision" class="panel-mision" style="display: none;">
+      <h1>Nuestra Misión</h1>
+      <p>
+        Proveer pollo de engorde de la más alta calidad, criado de manera sostenible y responsable,<br />
+        para satisfacer las necesidades de nuestros clientes y contribuir al bienestar de la comunidad,<br />
+        garantizando estándares de sanidad, inocuidad y bienestar animal.
+      </p>
+    </div>
+
+    <!-- Panel Visión -->
+    <div id="panel-vision" class="panel-vision" style="display: none;">
+      <h1>Nuestra Visión</h1>
+      <p>
+        Ser reconocidos como líderes en la industria avícola a nivel nacional, innovando en<br />
+        prácticas de crianza, manteniendo nuestro compromiso con la calidad, la sostenibilidad<br />
+        y el desarrollo de nuestra comunidad.
+      </p>
+    </div>
+
+<!-- Panel Contáctenos -->
+<div id="panel-contactenos" class="panel-contactenos" style="display: none;">
+  <div class="recuadro-izquierdo">
+    <h2>Información</h2>
+    <p>Por favor ingrese los datos de su consulta y con gusto le responderemos.</p>
+
+    <div class="info-contacto">
+      <img src="../IMAGENES/Telefono2.png" alt="Teléfono">
+      <div>
+        <strong>Call Center</strong><br />
+        Centro de información<br />
+        7762-1234
+      </div>
+    </div>
+
+    <div class="info-contacto">
+      <img src="../IMAGENES/Gmail2.png" alt="Email">
+      <div>
+        <strong>Email</strong><br />
+        pollodoradosa@gmail.es.gt
+      </div>
+    </div>
+
+    <div class="info-contacto">
+      <img src="../IMAGENES/Ubicacion2.png" alt="Ubicación">
+      <div>
+        <strong>Ubicación</strong><br />
+        7av. 13–46 zona 7, Sololá, Guatemala
+      </div>
+    </div>
+
+    <div class="info-contacto">
+      <img src="../IMAGENES/chat_online2.png" alt="Chat">
+      <div>
+        <strong>Chat en línea</strong><br />
+        Lunes a Viernes de 7:00 a 16:00 horas<br />
+        5151–1680
+      </div>
+    </div>
+  </div>
+
+  <div class="recuadro-derecho">
+    <div class="contenido-interno-formulario">
+      <h2 class="titulo-formulario">Contáctenos</h2>
+      <form class="formulario-contacto">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" class="input-contacto" />
+        </div>
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="input-contacto" />
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" class="input-contacto" />
+        </div>
+        <div class="campo">
+          <label for="tipo">Tipo de contacto</label>
+          <input type="text" id="tipo" class="input-contacto" />
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" class="input-contacto mensaje-contacto"></textarea>
+        </div>
+        <div class="boton-formulario">
+          <button type="submit" class="btn-contacto">ENVIAR</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Panel Conócenos -->
+<div id="panel-conocenos" class="recuadro-Conocenos" style="display: none;">
+  <h2>Conócenos</h2>
+  <div class="texto-conocenos">
+    Don John Walter Connor, conocido como don Johnny, inició en 1960 una pequeña granja de pollos con Q8,000 provenientes de una póliza educativa.<br />
+    Comenzó criando 400 pollos semanales en una casa alquilada cerca de Villa Canales, Guatemala, importando aves y alimento desde EE. UU.<br />
+    En 1964 fundó la Incubadora Oak Crest con socios, para incubar huevos fértiles.<br />
+    En 1965, su madre le donó una finca en El Búcaro, donde construyó galeras, una planta procesadora y una bodega para alimento.<br />
+    Con un préstamo hipotecario, amplió su operación con nuevas instalaciones y equipo automatizado.<br />
+    En 1967 inauguró la Planta Procesadora con capacidad de 3,500 pollos diarios.<br />
+    En 1968 finalizó la Granja de Nueva Aldea para 170,000 aves.<br />
+    Tras una crisis en los años 60, adquirió tierras en el Valle del Motagua para cultivar granos.<br />
+    En 1980 obtuvo financiamiento del Banco Centroamericano para duplicar la capacidad de producción.<br />
+    Entre 1980 y 1982 amplió con nuevas granjas, congeladoras y maquinaria moderna, procesando hasta 6,000 pollos diarios.
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

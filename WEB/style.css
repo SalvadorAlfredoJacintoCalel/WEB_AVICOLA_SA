@@ -1,0 +1,287 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF8F0;
+  color: #5A3921;
+}
+
+.header {
+  background: linear-gradient(to right, #FFC340);
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.logo-superior {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  height: 150px;
+}
+
+.nav-button {
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.3s;
+  background-color: #B96E48;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-button:hover {
+  background-color: #FFC340;
+  color: #8D4925;
+  transform: translateY(-2px);
+}
+
+.login-button {
+  background-color: #B96E48 !important;
+  color: white !important;
+}
+
+.login-button:hover {
+  background-color: #FF9800 !important;
+  color: white !important;
+}
+
+.imagen-fondo {
+  position: relative;
+  width: 100%;
+  height: 492px;
+  background-image: url('../IMAGENES/Imagen_Central2.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.titulo-bienvenida {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(185, 110, 72, 0.3);
+  color: white;
+  text-align: center;
+  padding: 35px 55px;
+  border-radius: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 10;
+}
+
+.titulo-bienvenida h1, .titulo-bienvenida h3 {
+  margin: 0;
+  font-size: 25px;
+  color: white;
+}
+
+.titulo-bienvenida h2 {
+  margin: 0;
+  font-size: 50px;
+  color: white;
+  text-shadow:
+    -5px -5px 0 #B96E48,
+     5px -5px 0 #B96E48,
+    -5px  5px 0 #B96E48,
+     5px  5px 0 #B96E48;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 492px;
+  overflow: hidden;
+}
+
+.panel-mision,
+.panel-vision {
+  position: absolute;
+  top: 40px;
+  left: 140px;
+  right: 120px;
+  background-color: rgba(185, 110, 72, 0.50);
+  color: white;
+  text-align: center;
+  padding: 30px 40px;
+  border-radius: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 10;
+  font-size: 34px;
+  line-height: 1.5;
+  text-shadow:
+    -1px -1px 0 #b96348,
+     1px -1px 0 #b96348,
+    -1px  1px 0 #b96348,
+     1px  1px 0 #b96348;
+}
+
+.panel-mision h1,
+.panel-vision h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-shadow:
+    -1px -1px 0 #b96348,
+     1px -1px 0 #b96348,
+    -1px  1px 0 #b96348,
+     1px  1px 0 #b96348;
+}
+
+.panel-mision p,
+.panel-vision p {
+  margin: 0;
+}
+
+.panel-contactenos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 492px;
+  z-index: 10;
+}
+
+.recuadro-izquierdo {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  width: 500px;
+  height: 475px;
+  background-color: rgba(185, 99, 72, 0.50);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 20;
+  overflow: hidden;
+  padding-top: -20px;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.recuadro-derecho {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  width: 500px;
+  height: 475px;
+  background-color: rgba(185, 99, 72, 0.50);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 20;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.info-contacto {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-contacto img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.info-contacto div {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.titulo-formulario {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.campo label {
+  font-size: 16px;
+  margin-bottom: 3px;
+  display: block;
+  color: white;
+}
+
+.input-contacto {
+  width: 100%;
+  font-size: 14px;
+  background-color: #FFC340;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.mensaje-contacto {
+  height: 60px;
+  resize: vertical;
+}
+
+.boton-formulario {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-contacto {
+  font-size: 14px;
+  background-color: #b96348;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contenido-interno-formulario {
+  margin-top: -20px;
+}
+
+.recuadro-izquierdo h2 {
+  font-size: 34px; 
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.recuadro-Conocenos {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  width: 1265px;
+  height: 450px;
+  background-color: rgba(185, 99, 72, 0.50);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 10;
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.recuadro-Conocenos h2 {
+  margin-top: 0;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.texto-conocenos {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
